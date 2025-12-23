@@ -13,4 +13,11 @@ describe('JobService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should have initial jobs', () => {
+    const jobs = service.jobs();
+    expect(jobs.length).toBe(2);
+    expect(jobs[0].title).toBe('Software Engineer');
+    expect(jobs[1].company).toBe('Web Solutions');
+  });
 });
