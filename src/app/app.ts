@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLinkWithHref } from '@angular/router';
 import { KanbanComponents } from './features/kanban/components/kanban.components';
 
 @Component({
   selector: 'app-root',
-  imports: [KanbanComponents],
+  imports: [KanbanComponents, RouterOutlet, RouterLinkWithHref],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
