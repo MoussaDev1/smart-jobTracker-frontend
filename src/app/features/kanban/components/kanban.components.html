@@ -1,0 +1,7 @@
+<div>
+  @for (job of jobService.jobs(); track job.id) {
+  <div>
+    <p>{{ job.title }} at {{ job.company }} - Status: {{ job.status }}</p>
+  </div>
+  }
+</div>
