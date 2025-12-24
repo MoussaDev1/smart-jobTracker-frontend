@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class JobService {
-  jobs = signal<JobApplication[]>([
+  private _jobs = signal<JobApplication[]>([
     {
       id: '1',
       title: 'Software Engineer',
@@ -20,4 +20,6 @@ export class JobService {
       status: 'APPLIED',
     },
   ]);
+
+  readonly jobs = this._jobs.asReadonly();
 }

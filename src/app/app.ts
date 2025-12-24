@@ -4,7 +4,7 @@ import { KanbanComponents } from './features/kanban/components/kanban.components
 
 @Component({
   selector: 'app-root',
-  imports: [KanbanComponents, RouterOutlet, RouterLinkWithHref],
+  imports: [RouterOutlet, RouterLinkWithHref],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
